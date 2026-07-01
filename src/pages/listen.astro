@@ -2,17 +2,17 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SamplyDashboard from '../components/SamplyDashboard';
 ---
-<BaseLayout title="Listen — Anthony Craythorn Sound Design" description="Selected audio samples, mixes and studio work by Anthony Craythorn, embedded with Samply players.">
+<BaseLayout title="Listen — Anthony Craythorn Sound Design" description="Selected audio samples, mixes and studio work by Anthony Craythorn.">
   <section class="hero">
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Selected work</p>
         <h1>Listen</h1>
-        <p class="lede">A curated space for songs, sounds and mixes. Audio is hosted by Samply and embedded directly into the page.</p>
+        <p class="lede">Selected studio work, mixes and musical projects in one place — a quick way to hear the detail, energy and emotional shape I aim for in a finished track.</p>
       </div>
       <div class="card">
-        <h3>Built for Samply</h3>
-        <p>Paste a Samply Player ID into the data file and this dashboard renders a responsive iframe with filters, project metadata and role credits.</p>
+        <h3>Selected mixes</h3>
+        <p>Use this page as a listening room for released work, studio examples and future before/after mix notes.</p>
       </div>
     </div>
   </section>
@@ -20,7 +20,7 @@ import SamplyDashboard from '../components/SamplyDashboard';
     <div class="section-inner">
       <p class="eyebrow">Audio dashboard</p>
       <h2>Mixes, songs and sound samples</h2>
-      <p class="light-lede">Use this page for public-facing audio examples you have permission to share. Each card can point to a different Samply player or playlist.</p>
+      <p class="light-lede">A small sample of my work across studio mixing, vocal production and musical theatre-adjacent projects. More credits and listening notes can be added here over time.</p>
       <SamplyDashboard client:load />
     </div>
   </section>

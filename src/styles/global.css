@@ -141,6 +141,25 @@ h3 { font-size: clamp(1.4rem, 2.6vw, 2.15rem); }
   gap: clamp(36px, 7vw, 90px);
   align-items: start;
 }
+.home-about {
+  grid-template-columns: minmax(0, .82fr) minmax(340px, .66fr);
+  align-items: stretch;
+}
+.margaret-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.margaret-photo {
+  width: 100%;
+  flex: 1;
+  min-height: 560px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 22px 60px rgba(5, 5, 5, .10);
+}
 .prose { max-width: 760px; }
 .prose p { margin: 0 0 1.25rem; }
 .prose strong { font-weight: 760; }
@@ -246,6 +265,7 @@ textarea { min-height: 180px; resize: vertical; }
   .hero { min-height: auto; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .image-tile { position: static; }
+  .margaret-photo { min-height: 420px; }
 }
 @media (max-width: 560px) {
   .grid, .field-grid { grid-template-columns: 1fr; }

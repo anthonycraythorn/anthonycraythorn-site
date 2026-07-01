@@ -17,7 +17,7 @@ function embedSrc(sample: AudioSample, accent: string) {
   return '';
 }
 
-export default function SamplyDashboard({ samples = audioSamples, accent = '#ead3c2' }: Props) {
+export default function SamplyDashboard({ samples = audioSamples, accent = '#111111' }: Props) {
   const safeSamples = Array.isArray(samples) ? samples : audioSamples;
   const categories = useMemo(() => ['All', ...Array.from(new Set(safeSamples.map((sample) => sample.category)))], [safeSamples]);
   const [active, setActive] = useState('All');

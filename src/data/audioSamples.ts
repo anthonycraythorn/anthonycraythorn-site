@@ -9,15 +9,14 @@ export type AudioSample = {
   samplyEmbedUrl?: string;
 };
 
-// Samply embed docs: https://docs.samply.app/embedding.html
-// Samply embed format: https://samply.app/embed/<Player ID>?color=ead3c2
+// Samply embed format: https://samply.app/embed/<Player ID>?color=111111
 export const audioSamples: AudioSample[] = [
   {
     title: 'Selected audio work',
-    project: 'Samply showcase',
-    category: 'Mixing',
+    project: 'Studio selections',
+    category: 'Selected work',
     role: 'Mix Engineer',
-    description: 'A curated Samply player for songs, sounds and mixes hosted directly by Samply.',
+    description: 'A short listening selection highlighting balance, clarity, vocal detail and the emotional arc of the mix.',
     samplyEmbedUrl: 'https://samply.app/embed/rRYvt73HEi9AjR1C2LzV?si=JwVo0R3Bd9ZiJayQVcklpDnqu3V2',
   },
 ];
