@@ -6,7 +6,6 @@ Astro + React rebuild of `anthonycraythorn.com`, intended for Netlify hosting.
 
 - Astro static site
 - React island for the interactive Samply audio dashboard
-- MDX for blog/article content
 - Netlify Forms for the contact form
 - Netlify `_redirects` for Squarespace URL preservation
 
