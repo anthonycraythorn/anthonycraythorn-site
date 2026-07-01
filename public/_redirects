@@ -7,6 +7,7 @@
 /store/p/production-polish /studio#production-polish 301
 /store/p/mixing /studio#mixing 301
 /store/p/mastering /studio#mastering 301
-/post-submit /thanks 301
+/post-submit /thanks/ 301
+/thanks /thanks/ 301
 /blog / 301
 /blog/break-into-musical-theatre-sound / 301
