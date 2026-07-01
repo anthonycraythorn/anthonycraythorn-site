@@ -1,0 +1,10 @@
+# Preserve current Squarespace URLs when the Netlify site goes live.
+/home / 301
+/studio /studio 301
+/studio-1 /studio 301
+/store /studio 301
+/store/p/vocal-recording /studio#vocal-recording 301
+/store/p/production-polish /studio#production-polish 301
+/store/p/mixing /studio#mixing 301
+/store/p/mastering /studio#mastering 301
+/post-submit /thanks 301

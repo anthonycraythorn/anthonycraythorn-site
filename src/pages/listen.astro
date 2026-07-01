@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SamplyDashboard from '../components/SamplyDashboard';
+---
+<BaseLayout title="Listen — Anthony Craythorn Sound Design" description="Selected audio samples, mixes and studio work by Anthony Craythorn, embedded with Samply players.">
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h1>Listen</h1>
+        <p class="lede">A curated space for songs, sounds and mixes. Audio is hosted by Samply and embedded directly into the page.</p>
+      </div>
+      <div class="card">
+        <h3>Built for Samply</h3>
+        <p>Paste a Samply Player ID into the data file and this dashboard renders a responsive iframe with filters, project metadata and role credits.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner">
+      <p class="eyebrow">Audio dashboard</p>
+      <h2>Mixes, songs and sound samples</h2>
+      <p class="light-lede">Use this page for public-facing audio examples you have permission to share. Each card can point to a different Samply player or playlist.</p>
+      <SamplyDashboard client:load />
+    </div>
+  </section>
+</BaseLayout>

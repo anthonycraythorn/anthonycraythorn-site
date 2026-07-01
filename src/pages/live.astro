@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { liveShows } from '../data/liveShows';
+---
+<BaseLayout title="Live — Anthony Craythorn Sound Design" description="Recent live and musical theatre sound credits by Anthony Craythorn.">
+  <section class="hero">
+    <div class="section-inner">
+      <p class="eyebrow">Recent live shows</p>
+      <h1>Live</h1>
+      <p class="lede">Selected musical theatre and live performance credits across Australia, New Zealand, Germany, Abu Dhabi, Korea and the UK.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner">
+      <div class="grid">
+        {liveShows.map((show) => (
+          <article class="show-card">
+            <img src={show.image} alt={`${show.title} artwork`} loading="lazy" />
+            <div>
+              <h3>{show.title}</h3>
+              <p>{show.location}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
