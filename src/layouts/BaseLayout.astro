@@ -12,6 +12,7 @@ const {
   description = 'Melbourne sound engineer, mix engineer and sound designer specialising in musical theatre, live performance, vocal recording, mixing and mastering.',
   image = '/images/anthony-headshot.jpg',
 } = Astro.props;
+
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://www.anthonycraythorn.com').toString();
 ---
 <!doctype html>
@@ -40,7 +41,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://www.anthony
           <a href="/">Home</a>
           <a href="/studio">Studio</a>
           <a href="/listen">Listen</a>
-          <a href="/live">Live</a>
           <a href="/contact">Contact</a>
           <a href="https://www.instagram.com/anthony.craythorn/" aria-label="Instagram">Instagram</a>
         </nav>
@@ -55,7 +55,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://www.anthony
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="/studio">Studio</a>
           <a href="/listen">Listen</a>
-          <a href="/live">Live</a>
           <a href="/contact">Contact</a>
         </nav>
       </div>
