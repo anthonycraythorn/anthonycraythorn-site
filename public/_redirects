@@ -1,6 +1,6 @@
-# Temporarily hide the Live page without deleting its source.
-/live / 302!
-/live/ / 302!
+# Temporarily hide the Listen page without deleting its source.
+/listen / 302!
+/listen/ / 302!
 
 # Preserve current Squarespace URLs when the Netlify site goes live.
 /home / 301
