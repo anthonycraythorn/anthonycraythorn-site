@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf());
+
+const formatDate = (date: Date) => new Intl.DateTimeFormat('en-AU', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+}).format(date);
+---
+<BaseLayout
+  title="Writing | Anthony Craythorn"
+  description="Notes and articles from Anthony Craythorn on sound design, mixing, musical theatre and the craft behind live performance."
+>
+  <section class="blog-hero">
+    <div class="section-inner">
+      <p class="eyebrow">Writing</p>
+      <h1>Notes from behind the console.</h1>
+      <p class="lede">Thoughts on sound design, mixing, musical theatre and the craft behind live performance.</p>
+    </div>
+  </section>
+
+  <section class="section blog-index" aria-labelledby="latest-writing">
+    <div class="section-inner">
+      <h2 id="latest-writing">Latest writing</h2>
+      {posts.length > 0 ? (
+        <ol class="post-list">
+          {posts.map((post) => (
+            <li>
+              <a class="post-card" href={`/blog/${post.id}/`}>
+                <div class="post-meta">
+                  <time datetime={post.data.publishedDate.toISOString()}>{formatDate(post.data.publishedDate)}</time>
+                </div>
+                <h3>{post.data.title}</h3>
+                <p>{post.data.description}</p>
+                <span class="post-link-text" aria-hidden="true">Read article <span>→</span></span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <div class="blog-empty">
+          <p>New writing is on its way.</p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

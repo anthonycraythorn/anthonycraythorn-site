@@ -1,0 +1,55 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, description, publishedDate, updatedDate, image } = post.data;
+
+const formatDate = (date: Date) => new Intl.DateTimeFormat('en-AU', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+}).format(date);
+---
+<BaseLayout
+  title={`${title} | Anthony Craythorn`}
+  description={description}
+  image={image}
+  type="article"
+>
+  <article class="blog-article">
+    <header class="blog-article-header">
+      <p class="eyebrow">Writing</p>
+      <h1>{title}</h1>
+      <p class="article-summary">{description}</p>
+      <div class="post-meta">
+        <time datetime={publishedDate.toISOString()}>{formatDate(publishedDate)}</time>
+        {updatedDate && (
+          <span>Updated <time datetime={updatedDate.toISOString()}>{formatDate(updatedDate)}</time></span>
+        )}
+      </div>
+    </header>
+
+    <div class="article-content">
+      <Content />
+    </div>
+
+    <footer class="article-footer">
+      <a href="/blog/">← All writing</a>
+    </footer>
+  </article>
+</BaseLayout>
