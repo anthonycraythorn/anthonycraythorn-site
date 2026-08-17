@@ -1,4 +1,9 @@
-# What I wish I knew before becoming a Professional Sound Engineer
+---
+title: "What I wish I knew before becoming a Professional Sound Engineer"
+description: "Five important lessons from over a decade working as a professional sound engineer."
+publishedDate: 2026-08-17
+draft: false
+---
 
 I have been working in the entertainment industry as a sound engineer for over a decade now and learnt many lessons a long the way. I did not manage the career I have had without a lot of hard work, trial & error and a bit of luck on the side. Here are 5 of the most important things I wish I knew before starting my journey as a Sound Engineer. 
 
@@ -6,7 +11,7 @@ I have been working in the entertainment industry as a sound engineer for over a
 
 In my early career I distinctly remember doing several festivals where the days turned into nights which turned into load outs which turned into driving long distances home. Live sound engineering often involves being one of the first suppliers to show up and the last to leave an event. Be prepared for long days. No employer is actively calling you up and saying “Hey are you keen for an 18hr shift today?” - these hours just end up happening. Usually from poor scheduling or crewing. It happens, get used to it. 
 
-Unfortunately, even as you progress in your career these long hours still manage to bleed into your life. I once worked a 24 hours shift pulling a show out of the Sydney Opera House overnight after working all day mixing the show. I remember getting back to my hotel around 11am in the morning, grabbing my suitcase and heading straight for the airport looking dishevelled and probably not smelling the best…   
+Unfortunately, even as you progress in your career these long hours still manage to bleed into your life. I once worked a 24 hours shift pulling a show out of the Sydney Opera House overnight after working all day mixing the show. I remember getting back to my hotel around 11am in the morning, grabbing my suitcase and heading straight for the airport looking dishevelled and probably not smelling the best…  
 
 ## Chasing the fun gigs is a trap
 
