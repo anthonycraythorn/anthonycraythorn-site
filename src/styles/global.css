@@ -191,6 +191,9 @@ h3 { font-size: clamp(1.4rem, 2.6vw, 2.15rem); }
 .show-card div { padding: 20px; }
 .show-card h3 { font-size: 1.25rem; letter-spacing: -0.03em; margin-bottom: 6px; }
 .show-card p { margin: 0; color: var(--muted); font-size: .95rem; }
+/* Live page: flex so a short final row sits centred under the grid */
+.show-grid { display: flex; flex-wrap: wrap; justify-content: center; }
+.show-grid .show-card { flex: 0 0 calc((100% - 44px) / 3); }
 
 .audio-dashboard { margin-top: 42px; }
 .filter-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
@@ -334,6 +337,7 @@ textarea { min-height: 180px; resize: vertical; }
   .hero-grid, .split { grid-template-columns: 1fr; }
   .hero { min-height: auto; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .show-grid .show-card { flex-basis: calc((100% - 22px) / 2); }
   .image-tile { position: static; }
   .margaret-photo { min-height: 420px; }
   .post-card { grid-template-columns: 1fr; gap: 12px; }
@@ -341,6 +345,7 @@ textarea { min-height: 180px; resize: vertical; }
 }
 @media (max-width: 560px) {
   .grid, .field-grid { grid-template-columns: 1fr; }
+  .show-grid .show-card { flex-basis: 100%; }
   .site-header { padding: 22px 5vw; }
   .brand { max-width: 220px; }
 }

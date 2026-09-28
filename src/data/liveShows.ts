@@ -1,4 +1,6 @@
 export const liveShows = [
+  { title: 'Anastasia The Musical', location: 'Adelaide', image: '/images/show-anastasia.jpg' },
+  { title: 'Phantom Of The Opera', location: 'HANDA Opera Sydney Harbour', image: '/images/show-phantom-handa.jpg' },
   { title: 'Beetlejuice', location: 'Australia / Abu Dhabi / Korea', image: '/images/show-beetlejuice.png' },
   { title: 'Tina: The Tina Turner Musical', location: 'Australian Tour', image: '/images/show-tina.jpg' },
   { title: 'Phantom Of The Opera', location: 'Australian Tour', image: '/images/show-phantom.jpg' },
