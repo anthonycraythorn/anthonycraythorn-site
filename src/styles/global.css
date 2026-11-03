@@ -195,9 +195,9 @@ h3 { font-size: clamp(1.4rem, 2.6vw, 2.15rem); }
 .show-grid { display: flex; flex-wrap: wrap; justify-content: center; }
 .show-grid .show-card { flex: 0 0 calc((100% - 44px) / 3); }
 
-/* Studio page: Listen section with Spotify album tiles */
+/* Home + Studio pages: Listen section with full-width Spotify album tiles */
 .listen-section { padding-bottom: 0; }
-.listen-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 40px; }
+.listen-grid { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 40px; }
 .listen-tile {
   background: var(--white);
   border: 1px solid var(--line);
@@ -352,7 +352,6 @@ textarea { min-height: 180px; resize: vertical; }
   .hero { min-height: auto; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .show-grid .show-card { flex-basis: calc((100% - 22px) / 2); }
-  .listen-grid { grid-template-columns: 1fr; }
   .image-tile { position: static; }
   .margaret-photo { min-height: 420px; }
   .post-card { grid-template-columns: 1fr; gap: 12px; }

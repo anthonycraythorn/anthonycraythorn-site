@@ -1,0 +1,32 @@
+---
+// Listen section with Spotify album players. Used on the Home and Studio pages.
+// Albums are listed in src/data/listenAlbums.ts.
+import { listenAlbums } from '../data/listenAlbums';
+---
+<section class="section listen-section" id="listen">
+  <div class="section-inner">
+    <p class="eyebrow">Recent work</p>
+    <h2>Listen</h2>
+    <p class="light-lede">Recent releases from the studio. Press play and have a listen.</p>
+    <div class="listen-grid">
+      {listenAlbums.map((album) => (
+        <article class="listen-tile">
+          <iframe
+            src={`https://open.spotify.com/embed/album/${album.spotifyAlbumId}?utm_source=generator&theme=0`}
+            title={`${album.title} on Spotify`}
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <div>
+            <h3>{album.title}</h3>
+            <p>{album.credit}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
