@@ -1,4 +1,6 @@
 export const liveShows = [
+  { title: 'Elf The Musical', location: 'Melbourne', image: '/images/show-elf.jpg' },
+  { title: 'Housewarming', location: 'Arts Centre Melbourne', image: '/images/show-housewarming.jpg' },
   { title: 'Anastasia The Musical', location: 'Adelaide', image: '/images/show-anastasia.jpg' },
   { title: 'Phantom Of The Opera', location: 'HANDA Opera Sydney Harbour', image: '/images/show-phantom-handa.jpg' },
   { title: 'Beetlejuice', location: 'Australia / Abu Dhabi / Korea', image: '/images/show-beetlejuice.png' },
