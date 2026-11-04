@@ -163,6 +163,8 @@ h3 { font-size: clamp(1.4rem, 2.6vw, 2.15rem); }
 .prose { max-width: 760px; }
 .prose p { margin: 0 0 1.25rem; }
 .prose strong { font-weight: 760; }
+.studio-about { margin-top: 36px; }
+.studio-about p:last-child { margin-bottom: 0; }
 .card, .service, .show-card, .sample-card, .form-card {
   background: var(--white);
   color: var(--ink);
